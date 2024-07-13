@@ -1,0 +1,357 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #F5F6F8;
+}
+
+.container {
+    display: flex;
+}
+
+button {
+    overflow: visible;
+}
+
+button,
+select {
+    text-transform: none;
+}
+
+button,
+input,
+select,
+textarea {
+    color: #5A5A5A;
+    font: inherit;
+    margin: 0;
+}
+
+input {
+    line-height: normal;
+}
+
+textarea {
+    overflow: auto;
+}
+
+.contact {
+    border: solid 3px #474544;
+    max-width: 768px;
+    margin: 60px auto;
+    position: relative;
+}
+
+form {
+    padding: 37.5px;
+    margin: 50px 0;
+}
+
+h1 {
+    color: #474544;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 7px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.underline {
+    border-bottom: solid 2px #474544;
+    margin: -0.512em auto;
+    width: 80px;
+}
+
+.icon_wrapper {
+    margin: 50px auto 0;
+    width: 100%;
+}
+
+.icon {
+    display: block;
+    fill: #474544;
+    height: 50px;
+    margin: 0 auto;
+    width: 50px;
+}
+
+.email {
+    float: right;
+    width: 45%;
+}
+
+input[type='text'],
+[type='email'],
+select,
+textarea {
+    background: none;
+    border: none;
+    border-bottom: solid 2px #474544;
+    color: #474544;
+    font-size: 1.000em;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin: 0em 0 1.875em 0;
+    padding: 0 0 0.875em 0;
+    text-transform: uppercase;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+input[type='text']:focus,
+[type='email']:focus,
+textarea:focus {
+    outline: none;
+    padding: 0 0 0.875em 0;
+}
+
+.message {
+    float: none;
+}
+
+.name {
+    float: left;
+    width: 45%;
+}
+
+select {
+    background: url('https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-arrow-down-32.png') no-repeat right;
+    outline: none;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+.subject {
+    width: 100%;
+}
+
+.telephone {
+    width: 100%;
+}
+
+textarea {
+    line-height: 150%;
+    height: 150px;
+    resize: none;
+    width: 100%;
+}
+
+::-webkit-input-placeholder {
+    color: #474544;
+}
+
+:-moz-placeholder {
+    color: #474544;
+    opacity: 1;
+}
+
+::-moz-placeholder {
+    color: #474544;
+    opacity: 1;
+}
+
+:-ms-input-placeholder {
+    color: #474544;
+}
+
+#form_button {
+    background: none;
+    border: solid 2px #474544;
+    color: #474544;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Helvetica', Arial, sans-serif;
+    font-size: 0.875em;
+    font-weight: bold;
+    outline: none;
+    padding: 20px 35px;
+    text-transform: uppercase;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+#form_button:hover {
+    background: #474544;
+    color: #F2F3EB;
+}
+
+@media screen and (max-width: 768px) {
+    .contact {
+        margin-top: 5rem;
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 26px;
+    }
+    .underline {
+        width: 68px;
+    }
+    #form_button {
+        padding: 15px 25px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    h1 {
+        font-size: 18px;
+    }
+    .icon {
+        height: 35px;
+        width: 35px;
+    }
+    .underline {
+        width: 53px;
+    }
+    input[type='text'],
+    [type='email'],
+    select,
+    textarea {
+        font-size: 0.875em;
+    }
+}
+
+.social {
+    bottom: 20px;
+    width: 100%;
+}
+
+.social ul {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin: 0;
+}
+
+.social ul li {
+    list-style: none;
+}
+
+.social ul li a {
+    display: block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 24px;
+    text-align: center;
+    color: #404040;
+    margin: 0 10px;
+    transition: .5s;
+    position: relative;
+}
+
+.social ul li a span {
+    position: absolute;
+    transition: transform .5s;
+}
+
+.social ul li a span:nth-child(1),
+.social ul li a span:nth-child(3) {
+    width: 100%;
+    height: 3px;
+    background: #404040;
+}
+
+.social ul li a span:nth-child(1) {
+    top: 0;
+    left: 0;
+    transform-origin: right;
+}
+
+.social ul li a:hover span:nth-child(1) {
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+.social ul li a span:nth-child(3) {
+    bottom: 0;
+    left: 0;
+    transform-origin: left;
+}
+
+.social ul li a:hover span:nth-child(3) {
+    transform: scaleX(0);
+    transform-origin: right;
+}
+
+.social ul li a span:nth-child(2),
+.social ul li a span:nth-child(4) {
+    width: 3px;
+    height: 100%;
+    background: #404040;
+}
+
+.social ul li a span:nth-child(2) {
+    top: 0;
+    left: 0;
+    transform: scale(0);
+    transform-origin: bottom;
+}
+
+.social ul li a:hover span:nth-child(2) {
+    transform: scale(1);
+    transform-origin: top;
+}
+
+.social ul li a span:nth-child(4) {
+    top: 0;
+    right: 0;
+    transform: scale(0);
+    transform-origin: top;
+}
+
+.social ul li a:hover span:nth-child(4) {
+    transform: scale(1);
+    transform-origin: bottom;
+}
+
+.facebook:hover {
+    color: #3b5998;
+}
+
+.facebook:hover span {
+    background: #3b5998;
+}
+
+.twitter:hover {
+    color: #016cae;
+}
+
+.twitter:hover span {
+    background: #1da1f2;
+}
+
+.instagram:hover {
+    color: #000000;
+}
+
+.instagram:hover span {
+    background: #0b0b0b;
+}
+
+.google:hover {
+    color: #dd4b39;
+}
+
+.google:hover span {
+    background: #dd4b39;
+}

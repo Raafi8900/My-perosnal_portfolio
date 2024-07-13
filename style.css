@@ -1,0 +1,176 @@
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            background-color: #F5F6F8;
+            min-height: 100vh;
+        }
+        /*  */
+        
+        .container {
+            display: flex;
+        }
+        
+        .infoContainer {
+            padding: 5rem;
+            margin-top: 1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10rem;
+            color: #0c0c0c;
+            padding: 10rem 9% 10rem;
+        }
+        
+        .devInfo {
+            position: sticky;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            font-size: 16px;
+            font-family: "Trirong", serif;
+        }
+        
+        .Hello {
+            font-size: 3em;
+        }
+        
+        .name {
+            font-size: 3rem;
+            font-weight: bold;
+            font-family: "Sofia", sans-serif;
+        }
+        
+        .about {
+            font-size: 2.5em;
+        }
+        
+        .moreabout {
+            font-size: 20px;
+            font-family: "PT Serif", serif;
+            margin-top: 23px;
+        }
+        
+        .buttons {
+            margin-top: 5px;
+        }
+        
+        .btn {
+            padding: 10px;
+            border-radius: 15px;
+            color: white;
+            background-color: dodgerblue;
+            font-weight: bold;
+            font-size: 1em;
+            margin: 6px;
+            cursor: pointer;
+        }
+        
+        .btn:hover {
+            background-color: white;
+            color: dodgerblue;
+        }
+        
+        .devPic img {
+            height: 80vh;
+            margin-top: -180px;
+        }
+        
+        .btn-sm {
+            font-size: 17px;
+            padding: 9px 15px;
+            margin: 13px 23px;
+        }
+        
+        .link {
+            display: flex;
+            margin: 120px;
+            margin-top: -60px;
+            font-size: 66px;
+        }
+        
+        .instagram {
+            padding-inline: 35px;
+        }
+        
+        .blogItem {
+            font-family: "PT Serif", serif;
+            margin: 20px;
+        }
+        
+        .blogContainer {
+            margin: 0 88px;
+        }
+        
+        h1 {
+            font-family: "PT Serif", serif;
+            margin: 22px;
+        }
+        
+        p {
+            font-family: "Source Code Pro", monospace;
+        }
+        
+        .skillContainer {
+            padding: 15px;
+        }
+        
+        .intro {
+            margin: 50px 8px;
+            margin-left: 5rem;
+        }
+        
+        .intro h2 {
+            font-family: "PT Serif", serif;
+            margin: 14px;
+        }
+        
+        .intro p {
+            font-family: "Source Code Pro", monospace;
+            margin: 14px;
+        }
+        
+        .skillItem {
+            display: flex;
+            align-items: center;
+        }
+        
+        .skill {
+            height: 10px;
+            width: 210px;
+            background-color: red;
+            border: 2px solid black;
+        }
+        
+        .t5 {
+            width: 55px;
+            background-color: blue;
+        }
+        
+        .menu {
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+        
+        @media (max-width: 1250px) {
+            .infoContainer {
+                flex-direction: column;
+                margin: 40px 0px;
+            }
+            .devPic img {
+                height: 40vh;
+            }
+            .devInfo {
+                font-size: 10px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .intro {
+                margin: 50px 6px;
+                margin-left: 0;
+                /* Add this line */
+            }
+        }
